@@ -1,0 +1,31 @@
+{
+  "name": "agnostic-rpc-graphql",
+  "version": "0.0.1",
+  "description": "Links Agnostic RPC server to GraphQL server, and Agnostic RPC client to GraphQL client",
+  "license": "MIT",
+  "author": {
+    "name": "John Murphy-Teixidor",
+    "email": "johnvmt@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnvmt/agnostic-rpc-graphql"
+  },
+  "scripts": {
+    "test": "mocha --colors ./test/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "babel-eslint": "^8.0.3",
+    "eslint": "^5.0.1",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "apollo-link-ws": "^1.0.17",
+    "esm": "^3.0.84",
+    "wolfy87-eventemitter": "^5.2.6",
+    "subscriptions-transport-ws": "^0.9.16"
+  },
+  "main": "index.js",
+  "module": "module.js"
+}
