@@ -1,6 +1,6 @@
 {
   "name": "agnostic-rpc-graphql",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Links Agnostic RPC server to GraphQL server, and Agnostic RPC client to GraphQL client",
   "license": "MIT",
   "author": {
@@ -22,11 +22,11 @@
   },
   "dependencies": {
     "apollo-link-ws": "^1.0.17",
-    "esm": "^3.0.84",
-	"graphql": "^14.3.1",
+    "esm": "^3.2.25",
+    "graphql": "^14.3.1",
     "wolfy87-eventemitter": "^5.2.6",
     "subscriptions-transport-ws": "^0.9.16"
   },
-  "main": "index.js",
+  "main": "module.js",
   "module": "module.js"
 }
