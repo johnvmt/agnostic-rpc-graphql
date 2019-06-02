@@ -1,6 +1,6 @@
 // Link RPC Server with subscriptionServer
 class RpcServerSubscriptionServerLink {
-	constructor(rpcServer, subscriptionServer) {
+	constructor(rpcServer, subscriptionServer, options = {}) {
 		const self = this;
 
 		const gqlSocketsByRequestId = new Map();
@@ -12,7 +12,7 @@ class RpcServerSubscriptionServerLink {
 			const requestId = requestController.requestId;
 
 			if(!gqlSocketsByRequestId.has(requestId)) {
-				const gqlSocket = subscriptionServer.connect();
+				const gqlSocket = subscriptionServer.connect(options.url);
 
 				gqlSocket.on('send', message => {
 					requestController.respond(message);

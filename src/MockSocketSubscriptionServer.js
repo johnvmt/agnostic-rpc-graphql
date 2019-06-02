@@ -13,13 +13,9 @@ class MockSocketSubscriptionServer {
 		);
 	}
 
-	connect() {
-		// TODO add option to override mock url
-		return this.mockSocketServer.connect('mockurl', ['graphql-ws']);
+	connect(url = 'mockurl') {
+		return this.mockSocketServer.connect(url, ['graphql-ws']);
 	}
 }
 
 export default MockSocketSubscriptionServer;
-
-
-

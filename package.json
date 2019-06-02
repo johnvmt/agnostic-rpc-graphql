@@ -1,6 +1,6 @@
 {
   "name": "agnostic-rpc-graphql",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Links Agnostic RPC server to GraphQL server, and Agnostic RPC client to GraphQL client",
   "license": "MIT",
   "author": {

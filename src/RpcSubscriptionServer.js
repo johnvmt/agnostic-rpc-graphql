@@ -7,8 +7,8 @@ class RpcSubscriptionServer {
 		this.subscriptionServer = new MockSocketSubscriptionServer(options);
 	}
 
-	connect(rpcServer = null) {
-		return new RpcServerSubscriptionServerLink(rpcServer, this.subscriptionServer);
+	connect(rpcServer, linkOptions) {
+		return new RpcServerSubscriptionServerLink(rpcServer, this.subscriptionServer, linkOptions);
 	}
 }
 
